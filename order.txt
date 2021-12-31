@@ -1,0 +1,10 @@
+pip install djangorestframework
+pip install django-cors-headers
+pip install geopy
+pip install geocoder
+pip install folium
+pip install pillow
+pip install django-location-field
+pip install jwt
+pip install PyJWT
+pip install PyJWT==1.7.1

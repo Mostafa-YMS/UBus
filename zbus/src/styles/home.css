@@ -1,0 +1,11 @@
+.home {
+  border: 2px;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: #fcfdfd;
+  height: 92vh;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
