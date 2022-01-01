@@ -19,6 +19,8 @@ export const Stations = () => {
               latitude={station.st_latitude}
               longitude={station.st_longitude}
               key={station.id}
+              offsetLeft={-10}
+              offsetTop={-10}
             >
               <img src={img} alt="station" />
               <p style={{ color: "white" }}> {station.station}</p>
