@@ -53,7 +53,7 @@ export const Lines = () => {
                 }}
                 paint={{
                   "line-color": cord.Color,
-                  "line-width": 2,
+                  "line-width": 4,
                 }}
               />
             </Source>
