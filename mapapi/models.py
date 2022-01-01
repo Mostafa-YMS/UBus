@@ -49,19 +49,19 @@ class bus(models.Model):
     operating = models.BooleanField(default=False)
 
 
-    def save(self,*args,**kwars):
-        channel_layer=get_channel_layer()
-        bus_obj=bus.objects.filter(operating=True)
-        buses = serial.serialize("json", bus_obj)
-        # data={'count':buses,'current_bus':self.name,'latitude':self.latitude,'longitude':self.longitude}
-        async_to_sync(channel_layer.group_send)(
-            'test_consumer_group',{
-                'type':'send_bus',
-                'value':buses
-            }
+    # def save(self,*args,**kwars):
+    #     channel_layer=get_channel_layer()
+    #     bus_obj=bus.objects.filter(operating=True)
+    #     buses = serial.serialize("json", bus_obj)
+    #     # data={'count':buses,'current_bus':self.name,'latitude':self.latitude,'longitude':self.longitude}
+    #     async_to_sync(channel_layer.group_send)(
+    #         'test_consumer_group',{
+    #             'type':'send_bus',
+    #             'value':buses
+    #         }
 
-        )
-        super(bus, self).save(*args,**kwars)
+    #     )
+    #     super(bus, self).save(*args,**kwars)
 
 
 
