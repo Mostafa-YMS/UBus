@@ -53,13 +53,13 @@
 
 ## How it works?
 
-    •	If you are a client:
+    If you are a client:
 
         •	You must register first (or login if you have an account)
 
         •	OR you can login with your Facebook or Google account
 
-    •	If you are a driver:
+    If you are a driver:
 
         •	Your account will be made by the administration and they will Provide you with your account details
 
