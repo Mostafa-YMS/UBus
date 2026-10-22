@@ -1,100 +1,65 @@
-# UBus
+# UBus — Public Transportation Platform
 
-## PREPARED FOR:
+UBus is a team-built public transportation web application developed as an Information Technology Institute project. It was designed to help passengers explore routes and stops, search for destinations, and view bus locations, while giving drivers and administrators role-specific workflows.
 
-• Information Technology Institute
+## Project overview
 
-## Supervisor:
+Public transportation information can be difficult to navigate when route, stop, and vehicle information are separated. UBus brings several of these workflows together in one application.
 
-• [Noha Shehab](https://github.com/NohaAShehab)
+## Features documented in this project
 
-## PREPARED BY:
+- **Passenger and driver accounts:** Registration and login flows with validation.
+- **Routes and stops:** Browse transportation lines and stations.
+- **Destination search:** Search for a destination from a user's location.
+- **Bus location:** Display current bus locations on a map.
+- **Driver workflow:** Drivers can indicate when a trip starts and ends so their bus location can be tracked.
+- **Administration:** Manage users, drivers, buses, lines, and stops.
+- **Additional interaction:** The original project documentation also describes chat/contact functionality and a dark-mode option.
 
-• [Mostafa Youssef](https://github.com/Mostafa-YMS)
-• [Mohamed Amin](https://github.com/mohamed000123)
-• [Aya Ehab](https://github.com/ayyaehab)
-• [Marwa Farag](https://github.com/marwafarg)
-• [Anas Rafat](https://github.com/anasRafat)
+## Technology
 
-## Problem:
+| Layer | Technologies |
+| --- | --- |
+| Frontend | React, HTML, CSS, Bootstrap |
+| Backend | Python, Django |
+| Database | PostgreSQL |
 
-• Public transportation company (UBus); Wants to make a website for their business
+## How the application is organized
 
-## Solution:
+The repository contains a Django project with separate areas for user management, route/stop information, and map-related functionality. The frontend uses React for the passenger-facing interface.
 
-• We made website with many features such as:
+## Team
 
-1. registration and login for both clients and drivers ; with validation
+Developed as a collaborative project for the Information Technology Institute.
 
-2. Showing company’s Lines and Stations
+- [Mostafa Youssef](https://github.com/Mostafa-YMS)
+- [Mohamed Amin](https://github.com/mohamed000123)
+- [Aya Ehab](https://github.com/ayyaehab)
+- [Marwa Farag](https://github.com/marwafarg)
+- [Anas Rafat](https://github.com/anasRafat)
 
-3. User can search for the destination from his place
+**Supervisor:** [Noha Shehab](https://github.com/NohaAShehab)
 
-4. User can see the current location of the busses
+## Running the project
 
-5. Admin Page to handle drivers, buses, lines and Stations Data
+The repository currently does not document a complete, verified local setup for both frontend and backend. Before using this project as a portfolio demonstration, add the exact setup steps for the current codebase, including:
 
-## Technologies:
+1. Python version and backend dependency installation.
+2. Required environment variables and database configuration.
+3. Database migration and sample-data instructions.
+4. Frontend dependency installation and development command.
+5. Any map, authentication, or external-service configuration.
+6. Screenshots or a demonstration of the working application.
 
-➔ Backend:
+Do not publish real credentials or service keys in the README.
 
-    •	 Python (Django)
+## Project status
 
-➔ Frontend:
+This repository documents an academic team project. Feature descriptions above reflect the existing project documentation; they should not be read as a claim that every external integration is currently deployable without additional setup.
 
-    •	HTML
-    •	CSS
-    •	Bootstrap
-    •	React
+## What this project demonstrates
 
-➔ Database: -
-
-    •	PostgreSQL
-
-## How it works?
-
-    If you are a client:
-
-        •	You must register first (or login if you have an account)
-
-        •	OR you can login with your Facebook or Google account
-
-    If you are a driver:
-
-        •	Your account will be made by the administration and they will Provide you with your account details
-
-## After logging as a client; you will have the access to those pages
-
-• Home Page: it includes a Map defining Lines, Stations, user Location And busses locations
-
-• Lines&Stops Page: it includes the following
-
-• The Map
-
-• Lines list & Stations list
-
-• From and to, to Search about the destination
-
-• You can use Dark Mode to change the website view
-
-## If you are a driver:
-
-• You will be redirect to the driver Page
-
-• Press Start button; when you start your work so we can track your bus location.
-
-• Press End button When you are done.
-
-### Chatting
-
-• You can chat with us to Ask, make a suggestion or complain
-
-### Admin Page
-
-• With Administration Page The administrator can define:
-
-    •	Lines
-    •	Stops
-    •	Add and Delete Drivers
-    •	Buses
-    •	Users
+- Integrating a React frontend with a Django backend.
+- Modeling role-specific workflows for passengers, drivers, and administrators.
+- Working with relational data for routes, stops, buses, and users.
+- Designing map-based transportation interactions.
